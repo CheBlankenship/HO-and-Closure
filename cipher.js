@@ -18,11 +18,10 @@
 var string = "CHANGE THE WORDS TO CODES";
 var arr = string.split('');
 // ['h', 'e', 'l', 'l', 'o']
-
 function makeArry(){
     return arr.map(function(change){
     var to_ascii = change.charCodeAt(0);
-    var add = to_ascii -30;
+    var add = to_ascii +120;
     var to_str = String.fromCharCode(add);
     return to_str;
     });
@@ -30,9 +29,7 @@ function makeArry(){
 
 function cipher(fun){
     return makeArry(arr).join("");
-
   }
-
 console.log(cipher(makeArry));
 
 
